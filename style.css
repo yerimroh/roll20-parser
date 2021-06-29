@@ -107,5 +107,5 @@ a {
 
   @font-face {
     font-family: "jalnan";       
-    src: url("assets/Jalnan.ttf");
+    src: url("./assets/Jalnan.ttf");
   }
