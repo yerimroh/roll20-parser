@@ -1,0 +1,107 @@
+
+body {
+    border: none;
+    
+    font-family: "kyobo"; 
+    
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+    align-self: center;
+    align-content: center;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.converter-page {
+    background-image: linear-gradient(120deg, #F8CDCD 0%, #91a8d1 100%);
+    font-family: "kyobo";
+}
+
+.howto-page {
+    background-image: linear-gradient(120deg, #F8CDCD 0%, #91a8d1 100%);
+    font-family: "kyobo";
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.howto-section {
+    max-width: 70%;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5vh;
+
+    padding: 5vh;
+    margin: 5vh;
+}
+
+
+
+#images {
+    width:45%;
+    
+}
+
+
+#description {
+    font-size: 15px;
+}
+
+
+#box {
+    max-width: 80%;
+    border: none;
+    
+    border-radius: 5vh;
+    font-size:10px;
+    font-family:"silgothic";
+
+    padding: 3vh;
+
+    background-color: linear-gradient(100deg, #ffffff10 0%, #ffffff 100%);
+}
+
+
+.image {
+    padding-bottom: 30px;
+}
+
+.buttons button {
+    width: 15vh;
+
+    border: none;
+    border-radius: 0.5vh;
+    font-family: "kyobo"; 
+    font-size: 15px;
+    text-decoration: bold;
+
+    margin: 1%;
+}
+
+.image input {
+    border: none;
+    border-radius: 1vh;
+
+    height: 15%;
+    
+}
+
+
+@font-face {
+    font-family: "kyobo";       
+    src: url("./assets/Kyobo Handwriting 2019.ttf");
+  }
+
+
+
+  @font-face {
+    font-family: "silgothic";       
+    src: url("./assets/SCDream4.otf");
+  }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Converter </title>
+        <link rel="stylesheet" href="style.css">
+        <script src=".\script.js"></script>
+    </head>
+
+    <body class = "howto-page" id = "howto-page">
+        <h2 style = "font-size: 30px;"> 사용설명서 </h2>
+        <a href="./index.html"> 돌아가기 </a>
+        
+        <section class = "howto-section"> 
+            
+            <div> 
+                <h2 id = "table-of-contents"> 목차 </h2>
+                <p style = "font-size: 12px;"> (클릭하면 이동해용) </p>
+
+                <ol>
+                    <li> <a href="#step1" style = "color: black;""> html 코드 변환하기 </a> </li>
+                    <li> <a href="#step2" style = "color: black;""> 블로그에 백업하기 (Tistory 기준) </a> </li>
+                    <li> <a href="#step3" style = "color: black;""> + 이미지 url 변경하기 </a> </li>
+                </ol>
+
+            </div> 
+            <br>
+            <hr>
+            <br> 
+
+            <div id = "description"> 
+                <h2 id = "step1"> html 코드 변환하기 </h2>
+               
+                <p> 1. 롤20 사이트 채팅 내역에서 <strong>ctrl + a</strong> 를 눌러 전체 셀렉 후 <strong> crtl + c </strong> 로 긁음! </p>
+                <img id = "images" src="./assets/1. copy from roll20.png" alt="screenshot">
+                <br>
+
+                <p> 2. 네이버 블로그로 가 '새 글쓰기'를 누르고 ctrl + v 로 붙여넣기 이후 <br> 우측 하단의 <strong> 'html' 버튼 </strong> 을 클릭해 html 코드로 변환. </p>
+                <img id = "images" src="./assets/2. convert to html.png" alt="screenshot" style = "width: 60%;"> 
+                <br>
+                
+                <p> 3. 변환된 html 코드를 다시 ctrl + c 로 복사하여 본 사이트의 네모 박스에 붙여넣기 후 <i> <strong style ="text-decoration: underline">Convert 버튼</strong> </i> 클릭! 
+                    <br> <br> p.s. ... 코드의 길이가 길면 (긴 세션일수록) 사이트가 터질 수 있습니다... 
+                    <br> 전체 코드를 몇 피스로 나누어 같은 과정을 여러 번 반복하셔야 할 수도...ㅜㅜ </p>
+                <img id = "images" src="./assets\3. click convert.png" alt="screenshot">
+                <br>
+                
+                
+                <p> => 이 시점에는: <br> 1. 파란색 지문(내가 작성한 지문)의 배경색이 다른 유저들의 지문과 같은 회색으로 변환됨 <br> 2. 화면을 뚫는 다이스 로그의 width 도 화면에 맞게(100%의 너비) 조정됨! <br> <br> </p>
+
+                <p> Convert 이후 <i> <strong style ="text-decoration: underline"> Copy 버튼</strong> </i> 을 클릭하면 변환된 코드가 클립보드에 복사됩니다. <br> 이후 ctrl + v 를 통해 어디든 붙여넣기를 할 수 있습니다. </p>
+                <img id = "images" src="./assets\copy success.png" alt="screenshot">
+                <p> * 클릭 이후 이런 알림창이 뜨면 성공적으로 복사가 된 거예요. (사용하는 브라우저에 따라 다를 수 있음!!) <br> <br> </p>
+                
+                <strong> <a href="#howto-page" style = "color: black;""> 위로 가기 </a> </strong>
+                <br>
+                <hr> 
+
+                <h2 id = "step2"> 블로그에 백업하기 </h2>
+                <p> <br> 1. 티스토리 블로그로 이동해 우측의 드롭다운 메뉴에서 <i> <strong> html 모드 </strong> </i> 선택 </p>
+                <img id = "images" src=".\assets\4. tistory.png" alt="screenshot" style = "width: 55%;">
+                
+                <p> 2. ctrl + v 로 코드 붙여넣기 <br> (html모드에서 다시 기본 모드로 돌아오면 롤방처럼 보임! 띄엄띄엄 떨어져 보이지만 글을 발행하면 붙어서 보여요!) </p>
+                <img id = "images" src="./assets\5. tistory-2.png" alt="screenshot"> <br> <br>
+                <img id = "images" src="./assets\5. tistory-3.png" alt="screenshot">
+               
+                <p> 3. 우측 하단의 완료 버튼을 눌러 포스트 발행으로 마무리. <br> <br> </p>
+               
+                <strong> <a href="#howto-page" style = "color: black;""> 위로 가기 </a> </strong>
+                <br>
+                <hr>
+
+                <h2 id = "step3"> 이미지 url 변경하기 </h2>
+                <p> 이렇게 백업된 포스팅들의 경우 roll20 에서 플레이어들이 라이브러리에 저장된 사진을 삭제할 경우 엑박으로 뜨게 됩니다,,
+                    <br> 이런 현상을 방지하고자 이미지 url을 바꾸는 방법이 있습니다! 
+
+                    <h3> <strong> 준비물: </strong> </h3>
+                    <p> roll20 에서 긁어온 <i> 원본 이미지 url </i> <br> </p>
+                    <img id = "images" src=".\assets\6. old-image.png" alt="screenshot">
+               
+                    <p> 사전에 블로그 포스팅이나 imgur 등의 사이트를 이용해 generate한 새 url(이미지 주소)! <br> (저는 티스토리 블로그에 인장만 따로 올려놓고 url을 긁어오는 방식을 사용합니다!) </p>
+                    <img id = "images" src=".\assets\6. new-image.png" alt="screenshot" style = "width: 40%;">
+                    
+
+                    <br> 
+                    <h3> <strong> url 변환하기 </strong> </h3>
+                    
+                    <p> 1. 본 사이트로 돌아와 인풋 박스 위에 있는 url 칸들을 채워 줍니다. <br> 좌측 인풋: roll20발 url | 우측 인풋: 새 url</p> 
+                    <img id = "images" src=".\assets\7. image-convert.png" alt="screenshot" style = "width: 60%;">
+                    
+                    <p> 2. 그리고 앞서 했듯이 convert 버튼을 누르는 것으로 마무리. <br> 이후엔 <i> <strong> <a href="#step1" style="color:blue;"> html 코드 변환하기 </a> </strong> </i> 섹션에서 했던 것과 똑같이 copy 버튼을 누르는 것으로 (이미지 url까지) 변환된 코드가 클립보드에 저장됩니다.</p>
+
+                
+                </p> 
+                
+                <strong> <a href="#howto-page" style = "color: black;""> 위로 가기 </a> </strong>
+            </div>
+        
+        </section>
+        
+
+    </body>
+</html>
