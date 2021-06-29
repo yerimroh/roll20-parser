@@ -43,6 +43,9 @@ a {
 }
 
 
+#title {
+    font-family: "jalnan"; 
+}
 
 #images {
     width:45%;
@@ -61,7 +64,7 @@ a {
     
     border-radius: 5vh;
     font-size:10px;
-    font-family:"silgothic";
+    font-family:"jalnan";
 
     padding: 3vh;
 
@@ -89,6 +92,7 @@ a {
     border: none;
     border-radius: 1vh;
 
+    font-family: "kyobo";
     height: 15%;
     
 }
@@ -102,6 +106,6 @@ a {
 
 
   @font-face {
-    font-family: "silgothic";       
-    src: url("./assets/SCDream4.otf");
+    font-family: "jalnan";       
+    src: url("assets/Jalnan.ttf");
   }
