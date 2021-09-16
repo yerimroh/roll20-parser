@@ -2,6 +2,10 @@
 
 https://roll20-html-parser.netlify.app/
 
+![image](https://user-images.githubusercontent.com/63764801/133686872-e5a7f5cf-ce9a-4d2c-a577-fa15f55c9445.png)
+
+
+
 롤20 채팅 로그 백업을 도와주는 프로그램/웹사이트!
 
 1) 파란색으로 나타나는 자신의 채팅을 전부 회색으로 변환하고, 
