@@ -1,8 +1,11 @@
-
-body {
+html {
+    padding: 0;
     border: none;
-    
-    font-family: "kyobo"; 
+    margin: 0;
+
+    height: 100%;
+    background-repeat: no-repeat;
+
     
     align-items: center;
     text-align: center;
@@ -10,9 +13,11 @@ body {
     align-self: center;
     align-content: center;
     
+    margin:auto;
 }
 
-a {
+
+a, a:hover {
     text-decoration: none;
     color: white;
     padding-bottom: 30px;
@@ -30,12 +35,14 @@ a {
 
     display: flex;
     flex-direction: column;
+
+    background-attachment: fixed;
 }
 
 .howto-section {
     max-width: 70%;
 
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.35);
     border-radius: 5vh;
 
     padding: 5vh;
@@ -58,17 +65,30 @@ a {
 }
 
 
-#box {
-    max-width: 80%;
-    border: none;
-    
-    border-radius: 5vh;
-    font-size:10px;
-    font-family:"jalnan";
-
+.box, .panel, .codeview, .note-frame, .note-editor {
+    margin: auto;
+    font-size:15px;
     padding: 3vh;
 
-    background-color: linear-gradient(100deg, #ffffff10 0%, #ffffff 100%);
+    border: 2px solid;
+
+    color: black !important;
+    background-color: rgb(255,255,255,0.35) !important;
+    border-radius: 30px !important;
+
+}
+
+.note-codable, .note-editable, .note-editing-area {
+    width: 100%;
+    background-color: transparent !important;
+    color: black !important;
+    text-align: justify !important;
+}
+
+
+.panel-heading, .note-toolbar, .note-statusbar {
+    background-color: transparent !important;
+    color: transparent !important;
 }
 
 
@@ -89,12 +109,12 @@ a {
 }
 
 .image input {
+    width: 180px;
     border: none;
     border-radius: 1vh;
 
     font-family: "kyobo";
     height: 15%;
-    
 }
 
 

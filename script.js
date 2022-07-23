@@ -1,35 +1,34 @@
 
 // resets every input boxes
 function clearArea() {
-    document.getElementById('box').value = "";   
+    document.getElementById('summernote').value = "";  
+    $('#summernote').summernote('code', '')
+    $('.note-codable')[0].value = "";
+
     document.getElementById('oldurl').value = "";
     document.getElementById('newurl').value = "";  
+
+    alert("Clear");
    } // convert
 
 
+
 function copy() {
-    var copyText = document.getElementById("box");
-    copyText.select();
-    //copyText.setSelectionRange(0, 99999)
-    document.execCommand("copy");
-    alert("Copied on clipboard!");
+var copyText = document.getElementsByClassName('note-codable')[0];
+copyText.select();
+document.execCommand("copy");
+alert("복사 완료!");
 } // copy
 
 
-
 function convert() {
-    result = document.getElementById('box').value; // obtain the input that user provided
+    result = document.getElementsByClassName('note-codable')[0].value; // obtain the input that user provided
     result = changeColor(result); // change background color to gray
     result = changeWidth(result); // change dice width so that it fits on screen
     
-    if(document.getElementById('oldurl').value != "" || document.getElementById('newurl').value != "") {
-        result = imageConvert(result); // convert image depending on the availability of the url
-
-    } // if
-  
-    document.getElementById('box').value = result;
+    document.getElementsByClassName('note-codable')[0].value = result;
    
-
+    alert("변환 완료!");
    } // convert
 
 
@@ -48,28 +47,39 @@ function changeColor(input) {
 function changeWidth(input) {
     result = input;
 
-    if(result.indexOf("background: rgb(255, 255, 255); width:") != -1) {
-        index = result.indexOf("background: rgb(255, 255, 255); width:") + 38
-        
-        endindex = result.indexOf("px", index) + 2;
+    firstindex = result.indexOf('sheet-rolltemplate-coc-1') + 137;
+    endindex = result.indexOf('border: 1px solid black; color: black;"><');
+    width = result.substring(firstindex, endindex);
 
-        width = result.substring(index, endindex);
-        result = result.replaceAll(width, "100%")
+    // convert the width of dice roll components 
+    if(width != -1) {
+        result = result.replaceAll(width, "100%; ")
     } // if
+    
     return result;    
 } // changeWidth
 
 
 
-function imageConvert(input) {
-    result = input;
 
-    if(document.getElementById('oldurl').value == "" || document.getElementById('newurl').value == "") {
+function imageConvert(input) {
+    result = document.getElementsByClassName('note-codable')[0].value; // obtain the input that user provided
+
+    oldurl = document.getElementById('oldurl');
+    newurl = document.getElementById('newurl');
+
+    if(oldurl.value == "" || newurl.value == "") {
         alert("Provide both old and new image url!");
     } else {
-        result = result.replaceAll(document.getElementById('oldurl').value, document.getElementById('newurl').value);
+        result = result.replaceAll(oldurl.value, newurl.value);
     } // if-else
 
-    return result;
+    // replace the box 
+    document.getElementsByClassName('note-codable')[0].value = result;
 
+    // clear out the box
+    oldurl.value = "";
+    newurl.value = "";  
+
+    alert("Converted Image!");
 }
